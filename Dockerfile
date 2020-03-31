@@ -6,8 +6,8 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 ENV LANG="en_US.utf8", LC_ALL="en_US.UTF-8", LC_LANG="en_US.UTF-8"
 ENV PYTHONIOENCODING=utf8
 
-RUN python -m pip install --upgrade pip, setuptools
+RUN python -m pip install --upgrade pip setuptools
 
-RUN apt-get install default-jdk
+RUN apt-get -y install default-jdk
 
 RUN printf "[global]\nindex-url = http://pypi.microblink.com/\ntrusted-host = pypi.microblink.com" > /etc/pip.conf
