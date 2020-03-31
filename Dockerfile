@@ -7,3 +7,5 @@ ENV LANG="en_US.utf8", LC_ALL="en_US.UTF-8", LC_LANG="en_US.UTF-8"
 ENV PYTHONIOENCODING=utf8
 
 RUN python -m pip install --upgrade pip, setuptools
+
+RUN apt-get install default-jdk
