@@ -6,6 +6,6 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 ENV LANG="en_US.utf8", LC_ALL="en_US.UTF-8", LC_LANG="en_US.UTF-8"
 ENV PYTHONIOENCODING=utf8
 
-RUN python -m pip install pip==20.2.2  setuptools==50.0.0
+RUN python -m pip install pip==20.3.3  setuptools==51.3.3
 
 RUN printf "[global]\nindex-url = http://pypi.microblink.com/\ntrusted-host = pypi.microblink.com" > /etc/pip.conf
