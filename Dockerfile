@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
+FROM nvidia/cuda:11.0.3-cudnn8-devel-ubuntu18.04
 RUN apt-get update && apt-get -y install cmake python3 python3-pip default-jdk
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 10
